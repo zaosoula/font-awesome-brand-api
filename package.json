@@ -1,0 +1,19 @@
+{
+    "name": "font-awesome-brand-api",
+    "version": "1.0.0",
+    "description": "An API",
+    "main": "main.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zarque/font-awesome-brand-api"
+    },
+    "scripts": {
+        "start": "sudo node ./main.js"
+    },
+    "author": "Zao Soula <contact@zaosoula.fr> (https://zaosoula.fr)",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.15.2",
+        "font-awesome-brand": "^1.0.0"
+    }
+}
