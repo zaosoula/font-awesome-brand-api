@@ -1,7 +1,7 @@
 var appRouter = function(app) {
     var fontAwesomeBrand = require("font-awesome-brand");
 
-    app.get("/fa-brand/", function(req, res) {
+    app.all("/fa-brand/", function(req, res) {
         return res.send({
             "status": "success",
             "statusmsg": null,
@@ -9,7 +9,7 @@ var appRouter = function(app) {
         });
     });
 
-    app.get("/fa-brand/about", function(req, res) {
+    app.all("/fa-brand/about", function(req, res) {
       var font_awesome_brand_api = require("../package.json");
         return res.send({
             "status": "success",
@@ -20,7 +20,7 @@ var appRouter = function(app) {
         });
     });
 
-    app.get("/fa-brand/:domain", function(req, res) {
+    app.all("/fa-brand/:domain", function(req, res) {
         if (fontAwesomeBrand[res.req.params.domain] != undefined) {
             return res.send({
                 "status": "success",
