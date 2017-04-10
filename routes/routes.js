@@ -10,7 +10,7 @@ var appRouter = function(app) {
     });
 
     app.all("/fa-brand/about", function(req, res) {
-      var font_awesome_brand_api = require("../package.json");
+        var font_awesome_brand_api = require("../package.json");
         return res.send({
             "status": "success",
             "statusmsg": null,
